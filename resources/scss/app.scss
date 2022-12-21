@@ -1,0 +1,156 @@
+@use './scss_partials/variables' as *;
+@import '~bootstrap/scss/bootstrap';
+
+header {
+    img {
+        width: 80px;
+    }
+
+    ;
+
+    .navbar-nav {
+        a {
+            color: $dark;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &.active {
+                color: $primary_color;
+                box-shadow: 0px 66px 0 -17px #0282f9;
+            }
+
+            &:hover {
+                color: $primary_color;
+                box-shadow: 0px 66px 0 -17px #0282f9;
+            }
+
+        }
+
+        li.nav-item {
+            min-width: 70px;
+            text-align: center;
+        }
+    }
+
+}
+
+main {
+    background-color: $secondary_color;
+    color: $light;
+
+    .comic_jumbo {
+        height: 400px;
+
+        img {
+            height: inherit;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .m_neg {
+        align-items: center;
+        margin-top: -1.5rem;
+
+
+        .main_btn {
+            background-color: $primary_color;
+            font-weight: 600;
+            border: none;
+            padding: 0.75rem 1.5rem;
+
+            a {
+                text-decoration: none;
+                color: $light;
+            }
+        }
+
+        .btn_big {
+            font-size: 1.7rem;
+        }
+
+        .btn_reg {
+            margin-top: 3rem;
+            width: 200px;
+            font-size: 14px;
+        }
+
+        .comic {
+            img {
+                width: 200px;
+                object-fit: cover;
+                object-position: top;
+                aspect-ratio: 1 / 1;
+            }
+
+            span {
+                text-transform: uppercase;
+                display: inline-block;
+                padding-top: 1rem;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .call_to_action {
+        background-color: $primary_color;
+
+        a {
+            text-decoration: none;
+            column-gap: 0.5rem;
+
+            h6 {
+                color: $light;
+            }
+
+            img {
+                width: 50px;
+            }
+
+        }
+    }
+}
+
+footer {
+    .footer_top {
+        color: $light;
+        background-image: url("../img/footer-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container {
+            background-image: url("../img/dc-logo-bg.png");
+            background-repeat: no-repeat;
+            background-position: right;
+
+            .row {
+                flex-direction: column;
+                height: 330px;
+            }
+
+            h4 {
+                text-transform: uppercase;
+            }
+
+            a {
+                color: $text-link;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .footer_bot {
+        background-color: $dark;
+
+        .socials {
+            flex-basis: 35%;
+        }
+
+        h3 {
+            color: $primary_color;
+        }
+    }
+
+}
